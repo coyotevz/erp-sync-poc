@@ -1,18 +1,15 @@
-"""
-Modelos de datos del ERP
-"""
+"""ERP Sync Models."""
+
 from .base import Base
-from .product import Product
-from .sale import Sale, SaleItem
-from .stock import StockBySite
-from .account import Customer, AccountMovement
+from .erp_system import ERPSystem
+from .sync_config import SyncConfig
+from .sync_log import SyncLog
+from .instance import Instance
 
 __all__ = [
-    'Base',
-    'Product',
-    'Sale',
-    'SaleItem',
-    'StockBySite',
-    'Customer',
-    'AccountMovement'
+    "Base",
+    "ERPSystem",
+    "SyncConfig",
+    "SyncLog",
+    "Instance",
 ]
