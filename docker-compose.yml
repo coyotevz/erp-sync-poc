@@ -1,0 +1,39 @@
+version: '3.8'
+services:
+  postgres-suc001:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: erp_suc001
+      POSTGRES_USER: erp_user
+      POSTGRES_PASSWORD: erp_pass
+    ports:
+      - "5432:5432"
+    volumes:
+      - suc001_data:/var/lib/postgresql/data
+  
+  postgres-suc002:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: erp_suc002
+      POSTGRES_USER: erp_user
+      POSTGRES_PASSWORD: erp_pass
+    ports:
+      - "5433:5432"
+    volumes:
+      - suc002_data:/var/lib/postgresql/data
+  
+  postgres-suc003:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: erp_suc003
+      POSTGRES_USER: erp_user
+      POSTGRES_PASSWORD: erp_pass
+    ports:
+      - "5434:5432"
+    volumes:
+      - suc003_data:/var/lib/postgresql/data
+
+volumes:
+  suc001_data:
+  suc002_data:
+  suc003_data:
