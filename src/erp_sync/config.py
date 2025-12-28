@@ -1,5 +1,5 @@
 """
-Configuración del sistema ERP multi-sucursal
+Configuración del sistema ERP Multi-Sucursal
 """
 import os
 from dotenv import load_dotenv

@@ -14,5 +14,5 @@ __all__ = [
     'SaleItem',
     'StockBySite',
     'Customer',
-    'AccountMovement',
+    'AccountMovement'
 ]
